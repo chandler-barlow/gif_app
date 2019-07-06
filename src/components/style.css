@@ -32,8 +32,8 @@ input{
     }
 
 img{
-    width: 200px;
-    height: 200px;
+    width: 11em;
+    height: 11em;
     margin: .2em;
     object-fit: cover;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.39);
@@ -57,4 +57,43 @@ img{
 .spinner{
     margin: 10em auto;
 
+}
+.fullGif {
+    width: 27em;
+    height: 24em;
+    background-color: white;
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-52%, -50%);
+    box-shadow: 0px 0px 100px 200px rgba(0, 0, 0, 0.315);
+}
+
+.fullGif .close {
+    position: fixed;
+    top: -3%;
+    left: 93%;
+    transform: translate(-10%, -1%);
+    font-size: 1.7em;
+    color: black;
+}
+
+.fullGif h1{
+    color: gray;
+    position: fixed;
+    top: 85%;
+    left: 15%;
+    font-size: 1.7em;
+    transform: translate(-85%, -15%);
+}
+.fullGif img{
+    width: 27em;
+    height: 21em;
+    margin: .2em;
+    object-fit: cover;
+    position: fixed;
+    top: 43%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    
 }

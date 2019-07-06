@@ -1,12 +1,21 @@
 /* Author: Chandler Barlow
  * Description: 
- * These functions are for interacting with the tenor api
- * they're used in the main component
+ * Component that renders the gif
  */
 import React from 'react';
 
 export class GifCard extends React.Component {
+
+    constructor(props){
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(e){
+        this.props.viewGif(this.props.gif);
+    }
+
     render(){
-        return (<img src = {this.props.gif.media[0].gif.url}></img>)
+        return (<img src = {this.props.gif.media[0].gif.url} onClick = {this.handleClick}></img>)
     }
 }

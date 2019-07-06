@@ -22,7 +22,7 @@ export function getGifByTerm(search, amount){
     const key = 'M2B4PG8HC8FN';
     // Returns 24 gifs is default because I think that amount fits well on the screen
     if (amount === null) {
-        amount = 24;
+        amount = 28;
     }
     var url = `https://api.tenor.com/v1/search?q=${search}&key=${key}&limit=${amount}`;
     return fetch(url, {method: 'GET'})

@@ -1,7 +1,6 @@
 /* Author: Chandler Barlow
  * Description: 
- * These functions are for interacting with the tenor api
- * they're used in the main component
+ * A search bar component
  */
 import React from 'react';
 
@@ -31,7 +30,7 @@ export class SearchBar extends React.Component {
         return (
             <div className = "searchbar">
             <form>
-            <input type = "text" placeholder = 'Search for a gif...' onChange = {this.handleChange}></input>
+            <input type = "text" placeholder = {this.props.placeholder} onChange = {this.handleChange}></input>
             <h1 className = "button" onClick = {this.search}>Search</h1>
             </form>
             </div>
