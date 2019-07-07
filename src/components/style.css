@@ -4,6 +4,10 @@ Description:
 CSS Style sheet
 Linked to the main component of Gif_App
 */
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: white;
 }
@@ -98,17 +102,23 @@ img{
     
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 500px){
+    body{
+        background-color: rgba(37, 135, 201, 0.116);
+    }
     .searchbar{
+        z-index: 10;
+        position: fixed;
+        top: 0;
         padding: 1em;
-        width: auto;
+        width: 375px;
         margin: 0px 0px 1em 0px;
         color: white;
         background-color: white;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.219);
     }
     input{
-        width : 50%;
+        width : 45%;
         padding: .9em;
         border: none;
         border-radius: 10em;
@@ -125,18 +135,80 @@ img{
         font-size: 1.1em;
     }
     .fullGif {
+        display: hidden;
         background-color: white;
         position: fixed;
-        top: 52%;
-        left: 50%;
-        transform: translate(-52%, -50%);
+        top: 0%;
+        left: 0%;
+        
         box-shadow: 0px 0px 100px 200px rgba(0, 0, 0, 0.315);
     }
     img{
-        width: 10em;
-        height: 10em;
-        margin: .5em;
+        z-index: 0;
+        transform: translate(-0%, 30%);
+        width: 20em;
+        height: 20em;
+        margin: .7em .3em;
         object-fit: cover;
         box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.39);
     }
 }
+
+@media screen and (max-width: 320px){
+    body{
+        background-color: rgba(37, 135, 201, 0.116);
+    }
+    .searchbar{
+        all: none;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        padding: .3em;
+        width: 375px;
+        margin: 0px 0px 0em 0px;
+        color: white;
+        background-color: white;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.219);
+    }
+    input{
+        position: relative;
+        left: -8%;
+        display: inline-block;
+        width : 30%;
+        padding: .9em;
+        border: none;
+        border-radius: 10em;
+        font-size: 1.1em;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.363);
+    }
+    .button {
+        position: relative;
+        left: -8%;
+        display: inline-block;
+        padding: .7em;
+        margin: .7em;
+        color: rgb(37, 135, 201);
+        border: 5px rgb(37, 135, 201) solid;
+        border-radius: 10em;
+        font-size: 1.1em;
+    }
+    .fullGif {
+        display: hidden;
+        background-color: white;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        
+        box-shadow: 0px 0px 100px 200px rgba(0, 0, 0, 0.315);
+    }
+    img{
+        z-index: 0;
+        transform: translate(-0%, 40%);
+        width: 15em;
+        height: 15em;
+        margin: .7em .3em;
+        object-fit: cover;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.39);
+    }
+}
+
