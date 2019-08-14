@@ -1,16 +1,16 @@
-# Gif searching app
-This web app allows you to search for gifs online
-### Planned features:
-- [x] searching gifs
-- [x] responsive styling
-- [ ] filtering
-- [ ] ability to share with friends
+# GIF App
 
-## To try yourself
-1. Clone this
-2. cd into the main folder and `npm start`
+This a web app for finding animated GIFs</br>
 
-### or
+### If you want to try it
 
-go to https://chandler-gif-app.herokuapp.com/
+This project is hosted on Heroku and you can try it [here](https://chandler-gif-app.herokuapp.com/) </br>
 
+## Built With
+
+* React
+* [Tenor](https://tenor.com/gifapi)
+
+## Authors
+
+* **Chandler Barlow**
