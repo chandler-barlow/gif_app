@@ -14,4 +14,3 @@ This web app allows you to search for gifs online
 
 go to https://chandler-gif-app.herokuapp.com/
 
-### *** Some styling does not work on mobile *** ###
